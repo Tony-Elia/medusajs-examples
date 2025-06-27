@@ -20,14 +20,13 @@ module.exports = defineConfig({
     {
       resolve: "./src/modules/delivery"
     },
-    // Recommended
-    // {
-    //   resolve: "@medusajs/workflow-engine-redis",
-    //   options: {
-    //     redis: {
-    //       url: process.env.REDIS_URL,
-    //     },
-    //   },
-    // },
+    {
+      resolve: "@medusajs/workflow-engine-redis",
+      options: {
+        redis: {
+          url: process.env.REDIS_URL,
+        },
+      },
+    },
   ],
 })
